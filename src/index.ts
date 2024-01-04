@@ -1,7 +1,7 @@
 //need to run npm rum pub to publish
 
 //errors
-export * from "./errors/BedRequestError";
+export * from "./errors/BadRequestError";
 export * from "./errors/custom-error";
 export * from "./errors/database-connection-error";
 export * from "./errors/not-authorized-error";
