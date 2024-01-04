@@ -1,11 +1,11 @@
 import { CustomError } from "./custom-error";
 
-export class BedRequestError extends CustomError {
+export class BadRequestError extends CustomError {
   statusCode = 400;
   constructor(public message: string) {
     super(message);
     //because ts
-    Object.setPrototypeOf(this, BedRequestError.prototype);
+    Object.setPrototypeOf(this, BadRequestError.prototype);
   }
 
   serializeErrors(): { message: string; field?: string | undefined }[] {
